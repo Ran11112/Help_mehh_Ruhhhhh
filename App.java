@@ -1,7 +1,7 @@
 
+
+
 import javax.swing.*;
-
-
 
 
 public class App {
@@ -15,18 +15,21 @@ public class App {
         JFrame frame = new JFrame("Snake");
         frame.setVisible(true);
         frame.setSize(boardWidth,boardHeight);
-        frame.setLocation(null);
+        frame.setLocation(0,0);
         frame.setResizable(false);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-
+        
         SnakeGame snakeGame = new SnakeGame(boardWidth, boardHeight);
         frame.add(snakeGame);
         frame.pack();
+        snakeGame.requestFocus();
 
     }
 
 }
+
+
 
 
 
