@@ -1,6 +1,4 @@
 
-
-
 import javax.swing.*;
 
 
@@ -15,7 +13,7 @@ public class App {
         JFrame frame = new JFrame("Snake");
         frame.setVisible(true);
         frame.setSize(boardWidth,boardHeight);
-        frame.setLocation(0,0);
+        frame.setLocationRelativeto(null);
         frame.setResizable(false);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
